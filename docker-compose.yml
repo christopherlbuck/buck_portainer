@@ -20,6 +20,7 @@ services:
       - 3306
 
   kanboard:
+    # https://hub.docker.com/r/kanboard/kanboard
     image: kanboard/kanboard:latest
     container_name: kanboard
     # restart: no
