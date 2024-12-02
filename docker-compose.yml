@@ -2,7 +2,7 @@ services:
   db:
     image: mysql:latest
     container_name: db-mysql
-    # restart: no
+    restart: yes
     environment:
        - MYSQL_DATABASE=pilabgaming
        - MYSQL_USER=pilabgaming
@@ -23,7 +23,7 @@ services:
     # https://hub.docker.com/r/kanboard/kanboard
     image: kanboard/kanboard:latest
     container_name: kanboard
-    # restart: no
+    restart: yes
     ports:
       - "65080:80"
       - "65443:443"
